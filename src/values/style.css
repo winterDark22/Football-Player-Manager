@@ -1,0 +1,36 @@
+.search-box{
+    -fx-background-color: #FFFFFF;
+     -fx-background-radius: 120;
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.search-buttton{
+    -fx-background-color: #a46262;
+    -fx-background-radius: 30;
+}
+
+.login-box{
+ -fx-background-color: #FFFFFF;
+
+}
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(230, 220, 220,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+.box-background{
+    -fx-background-color: #e6dcdc;
+}
+
+.player-background{
+    -fx-background-color: #8a4e4e;
+}
+.login-background{
+    -fx-background-color: #d99c9c;
+}
+.scroll-background{
+      -fx-background-color: #edebeb;
+}
+.buy-buttton{
+    -fx-background-color:#f0f0f0;
+    -fx-background-radius: 30;
+}

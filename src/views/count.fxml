@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="377.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.countController">
+   <children>
+      <HBox alignment="CENTER" layoutX="7.0" layoutY="1.0" prefHeight="71.0" prefWidth="375.0" styleClass="player-background" stylesheets="@../values/style.css">
+         <children>
+            <Label prefHeight="48.0" prefWidth="277.0" text="Country-wise Player Count" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Ext Condensed Bold" size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="73.0" prefHeight="36.0" prefWidth="369.0" styleClass="box-background" stylesheets="@../values/style.css">
+         <children>
+            <Label prefHeight="37.0" prefWidth="175.0" stylesheets="@../values/style.css" text="Country Name">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="35.0" prefWidth="125.0" text="Player Count">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane layoutY="109.0" prefHeight="268.0" prefWidth="387.0" styleClass="transparent" stylesheets="@../values/style.css">
+         <content>
+            <GridPane fx:id="gridpane" prefHeight="6.0" prefWidth="23.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

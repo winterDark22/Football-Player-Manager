@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="548.0" styleClass="box-background" stylesheets="@../values/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.rangeController">
+   <children>
+      <Label layoutX="134.0" layoutY="30.0" prefHeight="32.0" prefWidth="126.0" text="Lowest Salary:">
+         <font>
+            <Font name="Gill Sans MT Condensed" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="77.0" prefHeight="32.0" prefWidth="115.0" text="Highest Salary:">
+         <font>
+            <Font name="Gill Sans MT Condensed" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="low" layoutX="284.0" layoutY="30.0" prefHeight="32.0" prefWidth="181.0" styleClass="search-box" stylesheets="@../values/style.css">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="high" layoutX="284.0" layoutY="77.0" prefHeight="32.0" prefWidth="181.0" styleClass="search-box" stylesheets="@../values/style.css">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font></TextField>
+      <Button fx:id="submitButton" layoutX="395.0" layoutY="128.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="32.0" prefWidth="70.0" styleClass="search-buttton" stylesheets="@../values/style.css" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font></Button>
+      <Label fx:id="warningText" layoutX="42.0" layoutY="128.0" prefHeight="32.0" prefWidth="220.0">
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="5.0" layoutY="181.0" prefHeight="379.0" prefWidth="536.0" styleClass="transparent" stylesheets="@../values/style.css">
+         <content>
+            <GridPane fx:id="grid" prefHeight="9.0" prefWidth="41.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="clearButton" layoutX="297.0" layoutY="128.0" mnemonicParsing="false" onAction="#clearAciton" prefHeight="32.0" prefWidth="70.0" styleClass="search-buttton" stylesheets="@../values/style.css" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font></Button>
+      <Button fx:id="homeButton" layoutX="24.0" layoutY="18.0" mnemonicParsing="false" onAction="#homeAction" prefHeight="32.0" prefWidth="62.0" styleClass="search-buttton" stylesheets="@../values/style.css" text="Home" textFill="WHITE">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

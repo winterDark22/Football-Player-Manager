@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+    <children>
+      <Label fx:id="clubName" layoutX="59.0" layoutY="35.0" prefHeight="25.0" prefWidth="112.0" />
+      <BorderPane layoutX="15.0" layoutY="14.0" prefHeight="600.0" prefWidth="760.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="441.0" prefWidth="304.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="321.0" styleClass="search-box" stylesheets="@../values/style.css">
+                     <children>
+                        <TextField fx:id="searchText" prefHeight="36.0" prefWidth="219.0" promptText="Type here to search" styleClass="transparent" stylesheets="@../values/style.css">
+                           <font>
+                              <Font name="Gill Sans MT" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="35.0" prefWidth="77.0" styleClass="search-buttton" stylesheets="@../values/style.css" text="Search" textFill="WHITE">
+                           <font>
+                              <Font name="Gill Sans MT" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="304.0">
+                     <children>
+                        <Button fx:id="searchName" mnemonicParsing="false" onAction="#searchNameAction" prefHeight="67.0" prefWidth="113.0" text="Name">
+                           <font>
+                              <Font name="Gill Sans MT Ext Condensed Bold" size="36.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="salaryRange" mnemonicParsing="false" onAction="#salaryRangeAction" prefHeight="67.0" prefWidth="208.0" text="Salary Range">
+                           <font>
+                              <Font name="Gill Sans MT Ext Condensed Bold" size="36.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="48.0" prefWidth="304.0">
+                     <children>
+                        <Button fx:id="searchPosition" mnemonicParsing="false" onAction="#searchPositionAction" prefHeight="77.0" prefWidth="152.0" text="Position">
+                           <font>
+                              <Font name="Gill Sans MT Ext Condensed Bold" size="36.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="searchCountry" mnemonicParsing="false" onAction="#searchCountryAction" prefHeight="77.0" prefWidth="205.0" text="Country">
+                           <font>
+                              <Font name="Gill Sans MT Ext Condensed Bold" size="36.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="72.0" prefWidth="304.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="322.0" text="GET INFORMATION" textFill="#7c0a0a">
+                           <font>
+                              <Font name="Gill Sans MT Ext Condensed Bold" size="39.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="304.0">
+                     <children>
+                        <Button fx:id="allPlayers" mnemonicParsing="false" onAction="#allPlayersAction" prefHeight="26.0" prefWidth="150.0" text="All Players">
+                           <font>
+                              <Font name="Gill Sans MT Ext Condensed Bold" size="36.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="maxAge" mnemonicParsing="false" onAction="#maxAgeAction" prefHeight="46.0" prefWidth="172.0" text="Max Age">
+                           <font>
+                              <Font name="Gill Sans MT Ext Condensed Bold" size="36.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="81.0" prefWidth="304.0">
+                     <children>
+                        <Button fx:id="maxHeight" mnemonicParsing="false" onAction="#maxHeightAction" prefHeight="74.0" prefWidth="148.0" text="Max Height">
+                           <font>
+                              <Font name="Gill Sans MT Ext Condensed Bold" size="36.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="maxSalary" mnemonicParsing="false" onAction="#maxSalaryAction" prefHeight="74.0" prefWidth="161.0" text="Max Salary">
+                           <font>
+                              <Font name="Gill Sans MT Ext Condensed Bold" size="36.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="119.0" prefWidth="304.0">
+                     <children>
+                        <Button fx:id="playerCount" mnemonicParsing="false" onAction="#playerCountAction" prefHeight="77.0" prefWidth="304.0" text="Country-wise Player Count">
+                           <font>
+                              <Font name="Gill Sans MT Ext Condensed Bold" size="36.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="136.0" prefWidth="760.0" styleClass="box-background" stylesheets="@../values/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="138.0" prefWidth="330.0">
+                     <children>
+                        <Label fx:id="nameLabel" prefHeight="80.0" prefWidth="266.0" textFill="#7c0a0a">
+                           <font>
+                              <Font name="Gloucester MT Extra Condensed" size="40.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="57.0" prefWidth="330.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="151.0" text="    Yearly Salary:">
+                                 <font>
+                                    <Font name="Gill Sans MT Condensed" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="salaryLabel" prefHeight="44.0" prefWidth="190.0">
+                                 <font>
+                                    <Font name="Gill Sans MT Condensed" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="66.0" prefWidth="428.0">
+                     <children>
+                        <Button fx:id="home" mnemonicParsing="false" onAction="#homeAction" prefHeight="35.0" prefWidth="76.0" styleClass="search-buttton" stylesheets="@../values/style.css" text="Home" textFill="WHITE">
+                           <font>
+                              <Font name="Gill Sans MT" size="16.0" />
+                           </font></Button>
+                        <Pane prefHeight="76.0" prefWidth="19.0" />
+                        <Button fx:id="market" mnemonicParsing="false" onAction="#marketAction" prefHeight="35.0" prefWidth="79.0" styleClass="search-buttton" stylesheets="@../values/style.css" text="Market" textFill="WHITE">
+                           <font>
+                              <Font name="Gill Sans MT" size="16.0" />
+                           </font></Button>
+                        <Pane prefHeight="136.0" prefWidth="140.0">
+                           <children>
+                              <Label fx:id="warn" layoutY="73.0" prefHeight="52.0" prefWidth="138.0">
+                                 <font>
+                                    <Font name="Gill Sans MT" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children></Pane>
+                        <Button fx:id="logout" mnemonicParsing="false" onAction="#logoutAction" prefHeight="35.0" prefWidth="74.0" styleClass="search-buttton" stylesheets="@../values/style.css" text="Logout" textFill="WHITE">
+                           <font>
+                              <Font name="Gill Sans MT" size="16.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" styleClass="transparent" stylesheets="@../values/style.css" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </BorderPane.margin>
+               <content>
+                  <GridPane fx:id="grid" prefHeight="16.0" prefWidth="65.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+    </children>
+</AnchorPane>
